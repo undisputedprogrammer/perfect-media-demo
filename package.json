@@ -4,10 +4,10 @@
   "description": "Perfect Media Qatar — an animated HTML, Tailwind CSS and JavaScript landing page",
   "private": true,
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./styles.css --minify",
+    "build": "tailwindcss -i ./input.css -o ./styles.css --minify && node scripts/package-site.cjs",
     "dev": "node server.cjs",
     "watch:css": "tailwindcss -i ./input.css -o ./styles.css --watch",
-    "check": "node --check app.js && node --check premium.js && node --check server.cjs"
+    "check": "node --check app.js && node --check premium.js && node --check server.cjs && node --check scripts/package-site.cjs"
   },
   "keywords": [],
   "type": "commonjs",

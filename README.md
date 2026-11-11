@@ -33,6 +33,10 @@ Verified in-browser: intro auto-completion and skip, 320px and 390px layouts wit
 
 ## Preview
 
+### Vercel deployment
+
+Use **Other** as the framework preset. The committed `vercel.json` sets the build command to `npm run build`, the install command to `npm install`, and the output directory to `dist`. Set the project root to the directory containing `package.json` and `vercel.json`. The build compiles Tailwind and packages the static site in `dist/`; no server start command is needed. Commit and push the configuration and packaging script, then deploy the new commit. The former root-output (`.`) instructions are superseded by this configuration.
+
 ```sh
 npm install
 npm run build
