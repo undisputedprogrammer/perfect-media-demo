@@ -1,0 +1,19 @@
+{
+  "name": "perfect-media-demo",
+  "version": "1.0.0",
+  "description": "Perfect Media Qatar — an animated HTML, Tailwind CSS and JavaScript landing page",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./styles.css --minify",
+    "dev": "node server.cjs",
+    "watch:css": "tailwindcss -i ./input.css -o ./styles.css --watch",
+    "check": "node --check app.js && node --check premium.js && node --check server.cjs"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
